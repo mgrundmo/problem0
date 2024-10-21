@@ -3,10 +3,46 @@
     <head>
         <title>Search</title>
     </head>
+    <style>
+        .search {
+            display: flex;
+            z-index: 3;
+            position: relative;
+            min-height: 44px;
+            border: 1px solid transparent;
+            background: #4d5156;
+            box-shadow: none;
+            border-radius: 24px;   
+            margin: 0 auto;
+            width: auto;
+            max-width: 584px;         
+        }
+        .searchbtn {
+            background-color: #303134;
+            border: 1px solid #303134;
+            border-radius: 4px;
+            color: #e8eaed;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 0 16px;
+            line-height: 27px;
+            height: 36px;
+            min-width: 54px;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
     <body>
         <form action="https://www.google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
+            <div class="search">
+                <input class="search" type="text" name="q">
+            </div>
+            <div style="height: 70px; padding-top: 18px;">
+                <center>              
+                    <input class="searchbtn" type="submit" value="Google Search">
+                </center>
+            </div>
         </form>
     </body>
 </html>
