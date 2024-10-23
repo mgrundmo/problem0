@@ -4,6 +4,20 @@
         <title>Search</title>
     </head>
     <style>
+        body {
+            font-size: 14px;
+            font-family: Arial, sans-serif;           
+        }
+        a {
+            display: inline-block;
+            padding: 16px 5px;
+            margin: 0 5px;
+            text-decoration: none;
+            color: rgb(31, 31, 31);  
+        }
+        a:hover {
+            text-decoration: underline;
+        }
         .search {
             display: flex;
             z-index: 3;
@@ -63,15 +77,25 @@
         }
     </style>
     <body>
-        <form action="https://www.google.com/search">
-            <div class="search">
-                <input type="text" name="q">
+        <header>
+            <div style="text-align: right; width: 100%">
+                <a href="#">Image Search</a>
+                <a href="">Advanced Search</a>
             </div>
-            <div style="height: 70px; padding-top: 18px;">
-                <center>              
-                    <input type="submit" value="Google Search">
-                </center>
-            </div>
-        </form>
+        </header>
+        <main>
+            <form style="padding-top: 20px" action="https://www.google.com/search">
+                <div class="search">
+                    <center>
+                        <input type="text" name="q">
+                    </center>
+                </div>
+                <div style="height: 70px; padding-top: 18px;">  
+                    <center>      
+                        <input type="submit" value="Google Search">
+                    </center>
+                </div>
+            </form>
+        </main>
     </body>
 </html>
