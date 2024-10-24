@@ -18,6 +18,33 @@
             a:hover {
                 text-decoration: underline;
             }
+            input {
+                border-radius: 1px;
+                border: 1px solid #d9d9d9;
+                border-top: 1px solid #c0c0c0;
+                font-size: 13px;
+                height: 25px;
+                padding: 1px 8px;
+                width: 50%;
+            }
+            input:focus {
+                box-shadow: inset 0 1px 2px rgba(0,0,0,.3);
+                border: 1px solid #4d90fe;
+                outline: none;
+            }
+            .lbl {
+                float: left;
+                display: inline-block;
+                min-width: 167px;
+                width: 16%;
+                height: 42px;
+                color: #222;
+                font-size: 13px;
+                line-height: 21px;
+                vertical-align: bottom;
+                margin-top: 3px;
+            }
+         
         </style>
     </head>
     <body>
@@ -27,15 +54,25 @@
             </div>
         </header>
         <main>
-            <form style="padding-top: 20px" action="https://www.google.com/search">
-                <div>
-                    <label for="as_q">all these words</label>
-                    <input type="text" name="as_q"><br><br>
-                    <label for="as_q">this exact word or phrase</label>
+            <form style="margin: 40px 2% 0 45px;" action="https://www.google.com/search">
+                <div style="width: 100%; text-align: left;">
+                    <div class="lbl">
+                        <label for="as_q">all these words:</label>
+                    </div>
+                    <div class="ipt">
+                        <input type="text" name="as_q"><br><br>
+                    </div>
+                    <div class="lbl">
+                        <label for="as_q">this exact word or phrase:</label>
+                    </div>
                     <input type="text" name="as_epq"><br><br>
-                    <label for="as_q">any of these words</label>
+                    <div class="lbl">
+                        <label for="as_q">any of these words:</label>
+                    </div>
                     <input type="text" name="as_oq"><br><br>
-                    <label for="as_q">none of these words</label>
+                    <div class="lbl">
+                        <label for="as_q">none of these words:</label>
+                    </div>
                     <input type="text" name="as_eq"><br><br>
                 </div>
                 <div style="height: 70px; padding-top: 18px;">  
