@@ -2,8 +2,23 @@
 <html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
         <title>Image Search</title>
+        <style>
+            body {
+                font-size: 14px;
+                font-family: Arial, sans-serif;           
+            }
+            a {
+                display: inline-block;
+                padding: 16px 5px;
+                margin: 0 5px;
+                text-decoration: none;
+                color: rgb(31, 31, 31);  
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -12,7 +27,25 @@
             </div>
         </header>
         <main>
-            
+            <form style="padding-top: 20px" action="https://www.google.com/search">
+                <div>
+                    <center>
+                        <label for="as_q">all these words</label>
+                        <input type="text" name="as_q"><br><br>
+                        <label for="as_q">this exact word or phrase</label>
+                        <input type="text" name="as_epq"><br><br>
+                        <label for="as_q">any of these words</label>
+                        <input type="text" name="as_oq"><br><br>
+                        <label for="as_q">none of these words</label>
+                        <input type="text" name="as_eq"><br><br>
+                    </center>
+                </div>
+                <div style="height: 70px; padding-top: 18px;">  
+                    <center>      
+                        <input type="submit" value="Google Search">
+                    </center>
+                </div>
+            </form> 
         </main>
     </body>
 </html>
